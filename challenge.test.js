@@ -11,6 +11,9 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
+    let newArr=str.split('');
+    let revArr=newArr.reverse().join('');
+    return revArr;
 
 };
 
@@ -31,6 +34,10 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
+    let mid= Math.ceil(arr.length/2);
+    
+    arr.splice(mid,0,val);
+    return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
